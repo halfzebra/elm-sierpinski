@@ -4,6 +4,8 @@ An implementation of Sierpinski triangle in Elm,
 currently has only recursive implementation of the algorithm and
 relies on `elm-lang/graphics`.
 
+![Sierpinski Triangle in Elm](/../master/screenshot.png?raw=true)
+
 The project includes simple demo project.
 
 ### Install
