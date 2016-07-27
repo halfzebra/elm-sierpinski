@@ -1,0 +1,12 @@
+# IDE
+.idea
+
+# Exclude Node.js stuff
+node_modules
+node-debug.log
+
+# Elm stuff
+elm-stuff
+
+# Distribution files
+dist
