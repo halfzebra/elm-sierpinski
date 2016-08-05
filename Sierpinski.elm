@@ -43,7 +43,7 @@ type alias Triangle =
     }
 
 
-{-| -}
+{-|-}
 type alias Point =
     { x : Float, y : Float }
 
@@ -53,9 +53,12 @@ type alias Painted a =
     { a | color : Color }
 
 
-{-| -}
-getCenter : Point -> Point -> Point
-getCenter p1 p2 =
+{-| Calculate the midpoint between two points.
+
+    midpoint (Point 0 0) (Point 5 5)
+-}
+midpoint : Point -> Point -> Point
+midpoint p1 p2 =
     Point ((p1.x + p2.x) / 2) ((p1.y + p2.y) / 2)
 
 
@@ -75,7 +78,7 @@ equaliteral side =
             (Point (-side / 2) (-h / 2))
 
 
-{-| -}
+{-| Convert Triangle in to Shape, so it could be rendered -}
 toPolygon : Triangle -> Shape
 toPolygon { a, b, c } =
     polygon [ ( a.x, a.y ), ( b.x, b.y ), ( c.x, c.y ) ]
@@ -111,10 +114,12 @@ children parent current =
 {-| -}
 getCurrent : Triangle -> Triangle
 getCurrent { a, b, c } =
-    Triangle (getCenter a b) (getCenter b c) (getCenter a c)
+    Triangle (midpoint a b) (midpoint b c) (midpoint a c)
 
 
 {-| Recursive function for generating the fractal.
+
+
 -}
 recursive : Int -> List Triangle -> Triangle -> List Triangle
 recursive depth list parent =

@@ -1,16 +1,14 @@
 {
-    "version": "0.1.0",
-    "summary": "Sierpinski triangle in Elm",
+    "version": "1.0.0",
+    "summary": "helpful summary of your project, less than 80 characters",
     "repository": "https://github.com/user/project.git",
-    "license": "MIT",
+    "license": "BSD3",
     "source-directories": [
         "."
     ],
-    "exposed-modules": [
-        "Sierpinski"
-    ],
+    "exposed-modules": [],
     "dependencies": {
-        "elm-lang/core": "4.0.3 <= v < 5.0.0",
+        "elm-lang/core": "4.0.4 <= v < 5.0.0",
         "elm-lang/html": "1.1.0 <= v < 2.0.0",
         "evancz/elm-graphics": "1.0.0 <= v < 2.0.0"
     },
