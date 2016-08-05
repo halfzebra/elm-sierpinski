@@ -4,7 +4,7 @@ An implementation of [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpin
 
 Implements recursive algorithm and relies on `elm-lang/graphics`.
 
-![Sierpinski Triangle in Elm](/../master/example/screenshot.png?raw=true)
+![Sierpinski Triangle in Elm](https://github.com/halfzebra/elm-sierpinski/blob/master/example/screenshot.png?raw=true)
 
 The project includes simple demo project.
 
