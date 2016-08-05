@@ -49,7 +49,7 @@ type alias Triangle =
     }
 
 
-{-| A point with coordinates.
+{-| A point woth coordinates.
 
     midpoint (Point 0 0) (Point 5 5) -- Point 2.5 2.5
 -}
@@ -57,7 +57,11 @@ type alias Point =
     { x : Float, y : Float }
 
 
-{-| -}
+{-| A triangle with color value, ready to be rendered on to Collage.
+
+    painted =
+            toPainted (rgb 240 173 0) (Triangle (Point 0 0) (Point 5 5) (Point 0 5))
+-}
 type alias Painted a =
     { a | color : Color }
 
@@ -152,10 +156,7 @@ embedded { a, b, c } =
 {-| Recursive function for generating the fractal, requires depth,
 list of existing Triangles(used in recursion) and container Triangle for the fractal.
 
-    recursive
-        5
-        []
-        (equaliteral ((toFloat Window.width) / 3))
+    recursive 5 [] (equaliteral ((toFloat Window.width) / 3))
 -}
 recursive : Int -> List Triangle -> Triangle -> List Triangle
 recursive depth list parent =

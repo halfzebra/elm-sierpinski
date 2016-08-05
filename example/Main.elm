@@ -1,11 +1,11 @@
 module Main exposing (..)
 
-import Color exposing (rgb, Color)
 import Random
+import Color exposing (rgb, Color)
+import Collage exposing (collage, alpha)
 import Element exposing (toHtml)
 import Html exposing (Html)
 import Html.Lazy exposing (lazy)
-import Collage exposing (collage, alpha)
 import Html.App exposing (programWithFlags)
 import Window exposing (resizes, Size)
 import Mouse exposing (moves, Position)
