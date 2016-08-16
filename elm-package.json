@@ -1,5 +1,5 @@
 {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "summary": "Sierpinski triangle implementation in Elm",
     "repository": "https://github.com/halfzebra/elm-sierpinski.git",
     "license": "MIT",
