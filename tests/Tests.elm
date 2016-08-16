@@ -13,7 +13,7 @@ all =
         triangle =
             Triangle (Point 0 0) (Point 5 5) (Point 0 5)
     in
-        describe "Geometrical Helpers"
+        describe "Test"
             [ test "Calculating midpoint" <|
                 \() ->
                     Expect.equal
@@ -34,4 +34,12 @@ all =
                 \() ->
                     Expect.equal (toPolygon (triangle))
                         (polygon [ ( 0, 0 ), ( 5, 5 ), ( 0, 5 ) ])
+            , test "Converting Triangle to Painted Triangle" <|
+                \() ->
+                    Expect.equal (embedded triangle)
+                        ({ a = { x = 2.5, y = 2.5 }
+                         , b = { x = 2.5, y = 5 }
+                         , c = { x = 0, y = 2.5 }
+                         }
+                        )
             ]
