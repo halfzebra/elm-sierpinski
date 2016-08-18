@@ -2,6 +2,8 @@
 
 An implementation of [Sierpinski triangle](https://en.wikipedia.org/wiki/Sierpinski_triangle) in Elm.
 
+Check out the [example in action](https://halfzebra.github.io/elm-sierpinski/example/) :sparkles:
+
 Implements recursive algorithm and relies on `elm-lang/graphics`.
 
 [![Build Status](https://travis-ci.org/halfzebra/elm-sierpinski.svg?branch=master)](https://travis-ci.org/halfzebra/elm-sierpinski)
